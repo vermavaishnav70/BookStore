@@ -27,3 +27,17 @@ This is a simple backend application for a bookstore, built using **Node.js**, *
    git clone https://github.com/your-username/bookstore-backend.git
    cd bookstore-backend
    ```
+2.Install the dependencies:
+
+If you're using npm:
+```
+npm install
+```
+If you're using yarn:
+
+yarn install
+Create a .env file in the root of the project and add the following variables:
+
+JWT_SECRET=your_jwt_secret_key
+MONGO_URI=your_mongo_database_uri
+PORT=your_preferred_port
