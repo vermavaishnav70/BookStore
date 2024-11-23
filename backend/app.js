@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 require("dotenv").config(); // Load environment variables
 
@@ -9,6 +10,8 @@ const authRoutes = require("./routes/authRoute");
 const bookRoutes = require("./routes/bookRoutes");
 
 app.use(express.json());
+app.use(cors());
+
 
 // Use authentication routes
 app.use("/api/auth", authRoutes); // Register and login routes
